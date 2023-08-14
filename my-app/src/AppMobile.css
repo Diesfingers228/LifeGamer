@@ -2,6 +2,7 @@
   /* SideBar */
     html {
         min-height: 100%;
+        min-width: 100%;
     }
 
     * {
@@ -15,10 +16,12 @@
         background-attachment: fixed;
         background-repeat: no-repeat;
         min-height: 100%;
+        min-width: 100%;
     }
   
     body, #root {
         min-height: 100%;
+        min-width: 100%;
     }
 
     .general-div {
