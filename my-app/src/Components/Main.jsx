@@ -1,8 +1,8 @@
 import React from 'react'
 import { useDispatch } from 'react-redux'
 import hi from '../Icons_and_photos/generalHi.jpg'
-import { animationElements, windowClick } from '../Store/Slices/FirstSlice'
-import Footer from './SecondaryComponents/Footer'
+import { animationElements, windowClick, animationScroolFooter } from '../Store/Slices/FirstSlice'
+import footer from '../Icons_and_photos/footer.jpg'
 
 function Main() {
 
@@ -11,6 +11,7 @@ function Main() {
   //Animation
   if (window.screen.width >= '1023') {
     dispatch(animationElements())
+    dispatch(animationScroolFooter())
   }
     
 
@@ -66,9 +67,15 @@ function Main() {
             <p className='main-hi-p'>С нетерпением ждём в нашем уютном <a href='https://vk.com/ligemer?trackcode=062ed49b2N9dQUma2C5bSIIeR-WFJM7eEUXrNoYSclXIsf_ef71svu3uxZC0V0xAmRF0644X_MQhS-kuhQ5oVdm7oKoe' className='main-hi-p-a'>доме</a>.</p>
         </section>
     </main>
-
-     <Footer />
-
+    <footer className='footer'>
+        <div className='footer-content'>
+            <img className='footer-img' src={footer} alt="" />
+            <div className='footer-div-container-p'>
+                <p>Ссылка на сообщество: <a href='https://vk.com/ligemer?trackcode=062ed49b2N9dQUma2C5bSIIeR-WFJM7eEUXrNoYSclXIsf_ef71svu3uxZC0V0xAmRF0644X_MQhS-kuhQ5oVdm7oKoe' className='footer-a'>Life Gamer.</a></p>
+                <p>VK сайтодела: <a href='https://vk.com/bigpipitor228' className='footer-a'>Mister Bombastic.</a></p>
+            </div>
+        </div>
+    </footer>
     </div>
   </>
   )

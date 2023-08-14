@@ -42,7 +42,7 @@ const Slice = createSlice({
             // animatioLogicFooter
             let footerElement;
             let prevRatio = 0.0;
-            window.addEventListener('load', () => {
+            window.addEventListener('scroll', () => {
                 footerElement = document.querySelector('.footer')
                 createObserver()
             })
@@ -93,7 +93,7 @@ const Slice = createSlice({
             let hi;
             // animatiomLogic
             let counter = 0.0;
-            window.addEventListener('load', () => {
+            window.addEventListener("scroll", () => {
                 // animationMain
                 container = document.querySelector('.container-h2');
                 slides = document.querySelector('#slides');
