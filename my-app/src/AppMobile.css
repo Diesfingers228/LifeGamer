@@ -335,11 +335,10 @@
       display: flex;
       align-items: center;
       position: absolute;
-      bottom: 0;
+      bottom: 0 auto;
       left: 0;
       height: 20%;
       min-width: 100%;
-      margin-top: 3%;
     }
   
     .footer-content {
