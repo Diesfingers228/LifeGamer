@@ -337,6 +337,7 @@
       position: absolute;
       bottom: 0 auto;
       left: 0;
+      right: 0;
       height: 20%;
       min-width: 100%;
     }
