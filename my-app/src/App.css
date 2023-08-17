@@ -1,4 +1,4 @@
-@media (min-width: 1024px) {
+@media (min-device-width: 1024px) {
   /* SideBar */
     html {
         min-height: 100%;
@@ -37,7 +37,6 @@
     .header {
         display: flex;
         flex-direction: column;
-        row-gap: 0.5vh;
         word-wrap: break-word;
         overflow: hidden;
         color: blue;
@@ -54,6 +53,8 @@
         min-width: 250px;
         width: 25vw;
         z-index: 5;
+        padding-top: 1%;
+        gap: 1vh 1vh;
     }
   
     .menu-img {
@@ -80,7 +81,14 @@
       margin: 0;
       padding: 0;
       text-decoration: none;
-      margin-left: 10%;
+      margin-left: 4%;
+    }
+
+    .header-label {
+      width: 90%;
+      height: 5%;
+      background-color: rgba(68, 67, 67, 0.4);
+      border-radius: 10px;
     }
 
     @media (prefers-reduced-motion: no-preference) {
@@ -116,7 +124,7 @@
       box-shadow: -10px 10px 10px 10px rgba(0, 0, 0, 0.5), 10px 10px 10px 10px rgba(0, 0, 0, 0.5);
       background-color: rgba(0, 0, 0, 0.4);
       min-width: 600px;
-      padding-bottom: 25%;
+      padding-bottom: 30vh;
       }
   
     #frame input[type=radio] {
@@ -358,10 +366,8 @@
       box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.5), 10px -10px 10px 10px rgba(0, 0, 0, 0.5);
       display: flex;
       align-items: center;
-      position: absolute;
-      bottom: -20% auto;
-      left: 0;
-      height: 20%;
+      margin-top: -30vh;
+      height: 30vh;
       width: 100%;
     }
   

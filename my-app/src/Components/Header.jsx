@@ -17,8 +17,8 @@ const dispatch = useDispatch();
   return (
     <>
     <header style={selector}  className='header'>
-       <label style={{fontSize: '150%'}}>&raquo;<Link to='/'>Главная</Link></label>
-       <label style={{fontSize: '150%'}}>&raquo;<Link to='/info'>Информация</Link></label>
+       <label className='header-label' style={{fontSize: '150%'}}>&raquo;<Link to='/'>Главная</Link></label>
+       <label className='header-label' style={{fontSize: '150%'}}>&raquo;<Link to='/info'>Информация</Link></label>
     </header>
 
     <img style={selectorImg} src={Right} className='menu-img' onClick={() => {dispatch(headerStyle());}}/>
