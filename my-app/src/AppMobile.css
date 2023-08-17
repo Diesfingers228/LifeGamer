@@ -1,8 +1,7 @@
-@media (max-device-width: 1023px) {
+@media (max-device-width: 1024px) {
   /* SideBar */
     html {
         min-height: 100%;
-        min-width: 100%;
     }
 
     * {
@@ -12,16 +11,16 @@
   
     html, body {
         height: 100%;
+        min-height: 600px;
+        min-width: 900px;
         background: linear-gradient(to top in srgb, crimson, blue);
         background-attachment: fixed;
         background-repeat: no-repeat;
         min-height: 100%;
-        min-width: 100%;
     }
   
     body, #root {
         min-height: 100%;
-        min-width: 100%;
     }
 
     .general-div {
