@@ -1,4 +1,4 @@
-@media (max-device-width: 1024px) {
+@media (max-width: 1024px) {
   /* SideBar */
     html {
         min-height: 100%;
