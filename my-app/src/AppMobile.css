@@ -86,8 +86,8 @@
       .rei-spin {
         animation: App-logo-spin infinite 10s linear;
         position: absolute;
-        right: 1%;
-        top: 1%;
+        right: 1% auto;
+        top: 1% auto;
         border-radius: 100%;
         width: 4%;
         
@@ -358,7 +358,7 @@
       display: flex;
       align-items: center;
       position: absolute;
-      bottom: 0;
+      bottom: 0 auto;
       left: 0;
       height: 20%;
       width: 100%;
