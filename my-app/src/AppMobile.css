@@ -329,7 +329,7 @@
       width: 100%;
       position: absolute;
       bottom: 0 auto;
-      padding-right: 100%;
+      width: 100% auto;
     }
   
     .footer-content {
