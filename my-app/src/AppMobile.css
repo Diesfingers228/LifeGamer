@@ -86,7 +86,6 @@
       box-shadow: -10px 10px 10px 10px rgba(0, 0, 0, 0.5), 10px 10px 10px 10px rgba(0, 0, 0, 0.5);
       background-color: rgba(0, 0, 0, 0.4);
       min-width: 600px;
-      padding-bottom: 100px;
       }
   
     #frame input[type=radio] {
@@ -328,9 +327,9 @@
       box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.5), 10px -10px 10px 10px rgba(0, 0, 0, 0.5);
       display: flex;
       align-items: center;
-      padding-bottom: 125px;
-      height: 250px;
       width: 100%;
+      position: relative;
+      bottom: 0 auto;
     }
   
     .footer-content {
