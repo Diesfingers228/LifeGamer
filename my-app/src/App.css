@@ -116,7 +116,7 @@
       box-shadow: -10px 10px 10px 10px rgba(0, 0, 0, 0.5), 10px 10px 10px 10px rgba(0, 0, 0, 0.5);
       background-color: rgba(0, 0, 0, 0.4);
       min-width: 600px;
-      padding-bottom: 30vh;
+      padding-bottom: 20%;
       }
   
     #frame input[type=radio] {
@@ -358,8 +358,8 @@
       box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.5), 10px -10px 10px 10px rgba(0, 0, 0, 0.5);
       display: flex;
       align-items: center;
-      margin-top: -30vh;
-      height: 30vh;
+      padding-top: 20vh;
+      padding-bottom: 30%;
       width: 100%;
     }
   
