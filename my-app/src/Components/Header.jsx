@@ -23,7 +23,7 @@ const dispatch = useDispatch();
 
     <img style={selectorImg} src={Right} className='menu-img' onClick={() => {dispatch(headerStyle());}}/>
 
-    <img className='rei-spin' src={Rei}/>
+    {window.screen.width >= '900px'? <img className='rei-spin' src={Rei}/>: null}
    </>
   )
 }
