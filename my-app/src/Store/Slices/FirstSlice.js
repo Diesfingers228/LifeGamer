@@ -15,12 +15,7 @@ const Slice = createSlice({
     reducers: {
         headerStyle(state, action) {
                 if (state.bar.left !== '0%') {
-                    if (Number(window.screen.width) <= 1023) {
-                        state.rotate.left = '70vw';
-                    }
-                    else {
-                        state.rotate.left = '30vw'
-                    }
+                    state.rotate.left = '30vw'
                     state.rotate.rotate = '180deg';
                     state.bar.left = '0%';
                 }

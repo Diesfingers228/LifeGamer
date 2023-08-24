@@ -7,12 +7,10 @@
   
     html, body {
         height: 100%;
-        min-height: 600px;
-        min-width: 900px;
+        width: 100%;
         background: linear-gradient(to top in srgb, crimson, blue);
         background-attachment: fixed;
         background-repeat: no-repeat;
-        min-height: 100%;
     }
   
      #root {
@@ -21,20 +19,21 @@
     }
 
     .general-div {
-      position: relative;
       min-height: 100%;
+      min-width: 100%;
     }
   
     .header {
         height: 100%;
+        min-height: 300px;
         display: flex;
         flex-direction: column;
         word-wrap: break-word;
         overflow: hidden;
         color: blue;
         background-color: black;
-        border-top-right-radius: 10px;
-        border-bottom-right-radius: 10px;
+        border-top-right-radius: 1%;
+        border-bottom-right-radius: 1%;
         -webkit-transition: all 0.4s ease-in-out;
         -moz-transition: all 0.4s ease-in-out;
         -o-transition: all 0.4s ease-in-out;
@@ -42,7 +41,6 @@
         display: flex;
         column-gap: 1vw;
         position: fixed;
-        min-width: 250px;
         width: 25vw;
         z-index: 5;
         padding-top: 1%;
@@ -52,19 +50,17 @@
     .menu-img {
         margin-top: 1%;
         margin-left: 1%;
-        width: 8vh;
-        height: 8vh;
+        width: 4rem;
+        height: 4rem;
         -webkit-transition: all 0.4s ease-in-out;
         -moz-transition: all 0.4s ease-in-out;
         -o-transition: all 0.4s ease-in-out;
         transition: all 0.4s ease-in-out;
         overflow: hidden;
-        border: solid 2px;
+        border: solid 0.25vw;
         border-color:mediumblue;
         border-radius: 50%;
         background-color: rgb(156, 156, 245);
-        min-width: 32px;
-        min-height: 32px;
         z-index: 5;
     }
   
@@ -78,9 +74,11 @@
 
     .header-label {
       width: 90%;
-      height: 5%;
+      height: 1.5em;
       background-color: rgba(68, 67, 67, 0.4);
-      border-radius: 10px;
+      border-radius: 1%;
+      word-wrap: break-word;
+      font-size: calc(0.75em + 0.75rem);
     }
 
     @media (prefers-reduced-motion: no-preference) {
@@ -107,16 +105,15 @@
     /* Main */
     #frame {
       margin: 0 auto;
-      width: 50vw;
+      width: 50rem;
       height: 100%;
       text-align: center;
       padding-top: 5%;
       padding-left: 5%;
       padding-right: 5%;
-      box-shadow: -10px 10px 10px 10px rgba(0, 0, 0, 0.5), 10px 10px 10px 10px rgba(0, 0, 0, 0.5);
+      box-shadow: -1vw 1vw 1vw 1vw rgba(0, 0, 0, 0.5), 1vw 1vw 1vw 1vw rgba(0, 0, 0, 0.5);
       background-color: rgba(0, 0, 0, 0.4);
-      min-width: 600px;
-      padding-bottom: 250px;
+      padding-bottom: 2%;
       }
   
     #frame input[type=radio] {
@@ -129,30 +126,30 @@
     }
   
     #slides {
-      padding: 5px;
+      padding: 0.5vw;
       position: relative;
-      border-radius: 10px;
+      border-radius: 1%;
     }
   
     #overflow {
       width: 100%;
       overflow: hidden;
-      border-radius: 10px;
+      border-radius: 1%;
     }
   
     #frame1:checked~#slides .inner {
       margin-left: 0;
-      border-radius: 10px;
+      border-radius: 1%;
     }
   
     #frame2:checked~#slides .inner {
       margin-left: -100%;
-      border-radius: 10px;
+      border-radius: 1%;
     }
   
     #frame3:checked~#slides .inner {
       margin-left: -200%;
-      border-radius: 10px;
+      border-radius: 1%;
     }
   
     #slides .inner {
@@ -160,9 +157,9 @@
           cubic-bezier(0.770, 0.000, 0.175, 1.000);
       width: 400%;
       line-height: 0;
-      height: 300px;
+      height: 20rem;
       position: static;
-      border-radius: 10px;
+      border-radius: 1%;
     }
   
     #slides .frame {
@@ -179,27 +176,27 @@
       background-image: url(./Icons_and_photos/firstVisual.jpg);
       background-size: cover;
       background-repeat: no-repeat;
-      border-radius: 10px;
+      border-radius: 1%;
     }
   
     #slides .frame_2 {
       background-image: url(./Icons_and_photos/secondVisual.jpg);
       background-size: cover;
       background-repeat: no-repeat;
-      border-radius: 10px;
+      border-radius: 1%;
     }
   
     #slides .frame_3 {
     background-image: url(./Icons_and_photos/thirdVisual.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    border-radius: 10px;
+    border-radius: 1%;
     }
   
     #controls {
-      margin: -180px 0 0 0;
+      margin-top: -12.5rem;
       width: 100%;
-      height: 10vh;
+      height: 10rem;
       position: relative;
     }
   
@@ -221,11 +218,10 @@
     #frame3:checked~#controls label:nth-child(1), 
     #frame4:checked~#controls label:nth-child(2) {
       float: right;
-      margin: 0 -5px 0 0;
       display: block;
       background: url(./Icons_and_photos/generalRightPhotos.svg) no-repeat;
       background-size: contain;
-      
+      position: relative;
     }
   
     #frame1:checked~#controls label:nth-last-child(2),
@@ -233,25 +229,23 @@
     #frame3:checked~#controls label:nth-last-child(3), 
     #frame4:checked~#controls label:nth-last-child(2) {
       float: left;
-      position: static;
-      margin: 0 0 0 -5px;
       display: block;
       background: url(./Icons_and_photos/generalLeftPhotos.svg) no-repeat;
       background-size: contain;
     }
   
     #bullets {
-      margin: 20% 0 0;
+      margin: 10% 0 0;
       text-align: center;
     }
   
     #bullets label {
       display: inline-block;
-      width: 1.5vh;
-      height: 1.5vh;
+      width: 0.75rem;
+      height: 0.75rem;
       border-radius: 100%;
       background-color: wheat;
-      margin: 0 1.5vh;
+      margin: 0 0.75rem;
     }
   
     #frame1:checked~#bullets label:nth-child(1),
@@ -296,10 +290,10 @@
       color: pink;
     }
   
-    .frame-content h2 {
+    .frame-content {
       color:crimson;
       word-wrap: break-word;
-      font-size: larger;
+      font-size: medium;
       margin-bottom: 5%;
     }
   
@@ -330,7 +324,7 @@
       padding: 0;
       width: 100%;
       height: 100%;
-      border-radius: 10px;
+      border-radius: 1%;
       margin-bottom: 5%;
     }
   
@@ -350,17 +344,18 @@
     }
     /* footer */
     .footer {
-      margin: 0;
+      margin: 0 auto;
       padding: 0;
       background-color: black;
-      border-top-left-radius: 10px;
-      border-top-right-radius: 10px;
-      box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.5), 10px -10px 10px 10px rgba(0, 0, 0, 0.5);
+      border-top-left-radius: 1%;
+      border-top-right-radius: 1%;
+      box-shadow: 1vw 1vw 1vw 1vw rgba(0, 0, 0, 0.5), 1vw -1vw 1vw 1vw rgba(0, 0, 0, 0.5);
       display: flex;
       align-items: center;
-      padding-bottom: 125px;
-      height: 250px;
+      margin-top: -0;
+      height: 20rem;
       width: 100%;
+      padding-right: 1vw;
     }
   
     .footer-content {
@@ -395,7 +390,7 @@
       color: pink;
       margin: 0;
       padding: 0;
-      text-shadow: 1px 1px 2px red, 0 0 1em blue, 0 0 0.2em blue;
+      text-shadow: 1px 1px 1px red, 0 0 1em blue, 0 0 0.2em blue;
     }
   
   }

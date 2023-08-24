@@ -1,8 +1,8 @@
-import React from 'react'
-import { useDispatch } from 'react-redux'
-import hi from '../Icons_and_photos/generalHi.jpg'
-import { animationElements, windowClick, animationScroolFooter } from '../Store/Slices/FirstSlice'
-import Footer from './SecondaryComponents/Footer.jsx'
+import React from 'react';
+import { useDispatch } from 'react-redux';
+import hi from '../Icons_and_photos/generalHi.jpg';
+import { animationElements, windowClick, animationScroolFooter } from '../Store/Slices/FirstSlice';
+import Footer from './SecondaryComponents/Footer.jsx';
 
 function Main() {
 
@@ -10,8 +10,8 @@ function Main() {
 
   //Animation
   if (window.screen.width >= '1023') {
-    dispatch(animationElements())
-    dispatch(animationScroolFooter())
+    dispatch(animationElements());
+    dispatch(animationScroolFooter());
   }
     
 
