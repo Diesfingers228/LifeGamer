@@ -11,35 +11,76 @@ const Slice = createSlice({
             position: 'fixed',
             left: '',
          },
+         difference: {
+            signOn: '',
+            signOff: '',
+         },
     },
     reducers: {
+
         headerStyle(state, action) {
                 if (state.bar.left !== '0%') {
-                    state.rotate.left = '30vw'
+                   if (Number(window.innerWidth) >= 801) {
+                    state.rotate.left = '30vw';
+                   }
+                   else if (Number(window.innerWidth) >= 601 && Number(window.innerWidth) <=800) {
+                    state.rotate.left = '50vw';
+                   }
+                   else if (Number(window.innerWidth) <= 600) {
+                    state.rotate.left = '80vw';
+                   }
                     state.rotate.rotate = '180deg';
                     state.bar.left = '0%';
+                    state.difference.signOn = 'signal';
+                    state.difference.signOff = ''; 
                 }
                 else {
                     state.rotate.rotate = '0deg';
                     state.bar.left = '-100%';
                     state.rotate.left = '0%';
+                    state.difference.signOn = '';
+                    state.difference.signOff = 'signal';
                 };
         },
+
         // clickWindow off header
         windowClick(state, action) {
             if (state.bar.left == '0%') {
                 state.rotate.rotate = '0deg'
                 state.bar.left = '-100%'
                 state.rotate.left = '0%';
+                state.difference.signOn = '';
+                state.difference.signOff = 'signal';
             };
         },
+
+        // mobile header
+        mobileHeader(state, action) {
+            if (state.difference.signOn === 'signal') {
+                if (Number(window.innerWidth) >= 801) {
+                 state.rotate.left = '30vw';
+                }
+                else if (Number(window.innerWidth) >= 601 && Number(window.innerWidth) <=800) {
+                 state.rotate.left = '50vw';
+                }
+                else if (Number(window.innerWidth) <= 600) {
+                 state.rotate.left = '80vw';
+                }
+                 state.rotate.rotate = '180deg';
+                 state.bar.left = '0%';  
+             }
+             if (state.difference.signOff === 'signal') {
+                clearInterval(action.payload.interval)
+             }
+        },
+
         animationScroolFooter(state, action) {
             // animatioLogicFooter
             let footerElement;
             let prevRatio = 0.0;
             window.addEventListener('scroll', () => {
-                footerElement = document.querySelector('.footer')
-                createObserver()
+                footerElement = document.querySelector('.footer');
+                createObserver();
             })
             function createObserver() {
                 let observer;
@@ -58,7 +99,7 @@ const Slice = createSlice({
 
                 for (let i = 1.0; i <= num; i++) {
                     let ratio = i / num;
-                    thresholds.push(ratio)
+                    thresholds.push(ratio);
                 }
 
                 thresholds.unshift(0)
@@ -67,17 +108,18 @@ const Slice = createSlice({
             function handleIntersect(entries, observer) {
                 entries.forEach((entry) => {
                     if (entry.intersectionRatio > prevRatio) {
-                      entry.target.style.opacity = entry.intersectionRatio
-                      entry.target.style.transition = 'opacity 0.75s'
+                      entry.target.style.opacity = entry.intersectionRatio;
+                      entry.target.style.transition = 'opacity 0.75s';
                     } else {
-                      entry.target.style.opacity = entry.intersectionRatio
-                      entry.target.style.transition = 'opacity 0.75s'
-                    }
+                      entry.target.style.opacity = entry.intersectionRatio;
+                      entry.target.style.transition = 'opacity 0.75s';
+                    };
                 
                     prevRatio = entry.intersectionRatio;
                   });
             }
         },
+
         animationElements(state, action) {
             // variablesMain
             let container;
@@ -118,17 +160,16 @@ const Slice = createSlice({
            };
 
            function shold() {
-            let thresholds = []
+            let thresholds = [];
             let num = 24;
 
             for (let i = 0; i <= num; i++) {
-                let thres = i / num
-                thresholds.push(thres)
+                let thres = i / num;
+                thresholds.push(thres);
             }
             thresholds.unshift(0)
             return thresholds
            };
-
            function animation(entries, observer) {
                 entries.forEach(entry => {
                     if (entry.intersectionRatio > counter) {
@@ -141,12 +182,11 @@ const Slice = createSlice({
                     }
                 });
            }
-
         },
 
     }
 });
 
- export const {headerStyle, animationScroolFooter, animationElements, windowClick} = Slice.actions;
+ export const {headerStyle, animationScroolFooter, animationElements, windowClick, mobileHeader} = Slice.actions;
 
  export default Slice.reducer

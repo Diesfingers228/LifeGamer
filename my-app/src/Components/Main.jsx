@@ -16,7 +16,7 @@ function Main() {
 
   return (
   <>
-  <div className='general-div'  onClick={() => {dispatch(windowClick(''))}}>
+  <div className='general-div'  onClick={() => {dispatch(windowClick())}}>
   <main id="frame">
   <section className='container-h2'><h2 className='main-h2'>Добро пожаловать на сайт сообщества<h2 className='main-h2-name'>Life Gamer!</h2></h2></section>
         <input type="radio" name="frame" id="frame1" defaultChecked/>

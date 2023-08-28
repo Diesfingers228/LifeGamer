@@ -1,4 +1,4 @@
-@media (max-width: 1024px) {
+@media (min-width: 801px) {
   /* SideBar */
     * {
       margin: 0;
@@ -25,7 +25,6 @@
   
     .header {
         height: 100%;
-        min-height: 300px;
         display: flex;
         flex-direction: column;
         word-wrap: break-word;
@@ -129,6 +128,7 @@
       padding: 0.5vw;
       position: relative;
       border-radius: 1%;
+      min-width: 50vw;
     }
   
     #overflow {
@@ -190,7 +190,7 @@
     background-image: url(./Icons_and_photos/thirdVisual.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    border-radius: 1%;
+    border-radius: 1%
     }
   
     #controls {
@@ -241,11 +241,11 @@
   
     #bullets label {
       display: inline-block;
-      width: 0.75rem;
-      height: 0.75rem;
+      width: 1vw;
+      height: 1vw;
       border-radius: 100%;
       background-color: wheat;
-      margin: 0 0.75rem;
+      margin: 0 1vw;
     }
   
     #frame1:checked~#bullets label:nth-child(1),
@@ -295,6 +295,9 @@
       word-wrap: break-word;
       font-size: 100%;
       margin-bottom: 5%;
+      overflow: hidden;
+      word-wrap: break-word;
+      line-height: 1.2;
     }
   
     .main-sentence {
