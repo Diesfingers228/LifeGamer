@@ -162,7 +162,7 @@
     }
   
     #slides .frame {
-      width: 25%;
+      width: 40%;
       float: left;
       display: flex;
       justify-content: center;
