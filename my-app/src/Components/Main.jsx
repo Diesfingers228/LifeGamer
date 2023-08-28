@@ -5,11 +5,10 @@ import { animationElements, windowClick, animationScroolFooter } from '../Store/
 import Footer from './SecondaryComponents/Footer.jsx';
 
 function Main() {
-
   let dispatch = useDispatch();
 
   //Animation
-  if (window.screen.width >= '1023') {
+  if (window.innerWidth >= '1023') {
     dispatch(animationElements());
     dispatch(animationScroolFooter());
   }

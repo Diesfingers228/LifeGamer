@@ -1,4 +1,4 @@
-@media (min-device-width: 1024px) {
+@media (min-width: 1024px) {
   /* SideBar */
     * {
       margin: 0;
@@ -105,7 +105,7 @@
     /* Main */
     #frame {
       margin: 0 auto;
-      width: 50rem;
+      width: 60vw;
       height: 100%;
       text-align: center;
       padding-top: 5%;
@@ -129,6 +129,7 @@
       padding: 0.5vw;
       position: relative;
       border-radius: 1%;
+      min-width: 50vw;
     }
   
     #overflow {
@@ -190,7 +191,7 @@
     background-image: url(./Icons_and_photos/thirdVisual.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    border-radius: 1%;
+    border-radius: 1%
     }
   
     #controls {
@@ -293,7 +294,7 @@
     .frame-content {
       color:crimson;
       word-wrap: break-word;
-      font-size: medium;
+      font-size: 100%;
       margin-bottom: 5%;
     }
   
@@ -344,7 +345,7 @@
     }
     /* footer */
     .footer {
-      margin: 0 auto;
+      margin: 0;
       padding: 0;
       background-color: black;
       border-top-left-radius: 1%;
@@ -352,10 +353,10 @@
       box-shadow: 1vw 1vw 1vw 1vw rgba(0, 0, 0, 0.5), 1vw -1vw 1vw 1vw rgba(0, 0, 0, 0.5);
       display: flex;
       align-items: center;
-      margin-top: -0;
+      position: absolute;
+      bottom: 0 auto;
       height: 20rem;
       width: 100%;
-      padding-right: 1vw;
     }
   
     .footer-content {
