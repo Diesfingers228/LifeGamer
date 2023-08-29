@@ -163,7 +163,7 @@
     }
   
     #slides .frame {
-      width: 40%;
+      width: 25%;
       float: left;
       display: flex;
       justify-content: center;
@@ -359,7 +359,7 @@
       left: 0;
       bottom: -0 auto;
       width: 100%;
-      height: 100%;
+      height: 20vh;
     }
   
     .footer-content {
