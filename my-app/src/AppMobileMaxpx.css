@@ -16,7 +16,6 @@
      #root {
         min-height: 100%;
         min-width: 100%;
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     }
 
     .general-div {
@@ -114,6 +113,7 @@
       box-shadow: -1vw 1vw 1vw 1vw rgba(0, 0, 0, 0.5), 1vw 1vw 1vw 1vw rgba(0, 0, 0, 0.5);
       background-color: rgba(0, 0, 0, 0.4);
       padding-bottom: 25%;
+      flex-grow: 1;
       }
   
     #frame input[type=radio] {
@@ -356,8 +356,6 @@
       box-shadow: 1vw 1vw 1vw 1vw rgba(0, 0, 0, 0.5), 1vw -1vw 1vw 1vw rgba(0, 0, 0, 0.5);
       display: flex;
       align-items: center;
-      position: absolute;
-      bottom: 0 auto;
       left: 0;
       width: 100%;
       height: 25%;
