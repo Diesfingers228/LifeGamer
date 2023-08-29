@@ -112,8 +112,8 @@
       padding-right: 5%;
       box-shadow: -1vw 1vw 1vw 1vw rgba(0, 0, 0, 0.5), 1vw 1vw 1vw 1vw rgba(0, 0, 0, 0.5);
       background-color: rgba(0, 0, 0, 0.4);
-      padding-bottom: 2%;
-      flex: 1 0 auto;
+      padding-bottom: 10vh;
+      
       }
   
     #frame input[type=radio] {
@@ -357,9 +357,10 @@
       display: flex;
       align-items: center;
       position: absolute;
-      bottom: auto;
+      bottom: 0;
+      left: 0;
       width: 100%;
-      height: auto;
+      height: 20vh;
     }
   
     .footer-content {
