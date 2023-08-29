@@ -357,7 +357,7 @@
       display: flex;
       align-items: center;
       position: absolute;
-      bottom: -10vh auto;
+      bottom: auto;
       width: 100%;
       height: auto;
     }
