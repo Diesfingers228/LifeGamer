@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './AppMobile801px.css';
+import './AppMobileMaxpx.css';
 import './AppMobile800px.css';
 import './AppMobile600px.css';
 import './index.css';
