@@ -359,7 +359,7 @@
       position: absolute;
       bottom: -10vh auto;
       width: 100%;
-      height: 20vh;
+      height: auto;
     }
   
     .footer-content {
