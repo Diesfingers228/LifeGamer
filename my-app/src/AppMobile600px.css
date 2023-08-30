@@ -177,6 +177,7 @@
         background-size: cover;
         background-repeat: no-repeat;
         border-radius: 1%;
+        width: 100%;
       }
     
       #slides .frame_2 {
