@@ -49,8 +49,7 @@
     .menu-img {
         margin-top: 1%;
         margin-left: 1%;
-        width: 4rem;
-        height: 4rem;
+        width: 4.5%;
         -webkit-transition: all 0.4s ease-in-out;
         -moz-transition: all 0.4s ease-in-out;
         -o-transition: all 0.4s ease-in-out;
@@ -58,7 +57,7 @@
         overflow: hidden;
         border: solid 0.25vw;
         border-color:mediumblue;
-        border-radius: 50%;
+        border-radius: 100%;
         background-color: rgb(156, 156, 245);
         z-index: 5;
     }
@@ -124,10 +123,8 @@
     }
   
     #slides {
-      padding: 0.5vw;
-      position: relative;
+      padding: 0.5vh;
       border-radius: 1%;
-      min-width: 50vw;
     }
   
     #overflow {
@@ -253,22 +250,20 @@
       background: #444;
     }
   
-    @media screen and (max-width: 900px) {
-      #frame1:checked~#controls label:nth-child(2),
-      #frame2:checked~#controls label:nth-child(3),
-      #frame3:checked~#controls label:nth-child(1),
-      #frame4:checked~#controls label:nth-child(2),
-      #frame1:checked~#controls label:nth-last-child(2),
-      #frame2:checked~#controls label:nth-last-child(1),
-      #frame3:checked~#controls label:nth-last-child(3),
-      #frame4:checked~#controls label:nth-last-child(2) {
-          margin: 0;
-          
-      }
-      #slides {
-          max-width: calc(100% - 140px);
-          margin: 0 auto;
-      }
+    #frame1:checked~#controls label:nth-child(2),
+    #frame2:checked~#controls label:nth-child(3),
+    #frame3:checked~#controls label:nth-child(1),
+    #frame4:checked~#controls label:nth-child(2),
+    #frame1:checked~#controls label:nth-last-child(2),
+    #frame2:checked~#controls label:nth-last-child(1),
+    #frame3:checked~#controls label:nth-last-child(3),
+    #frame4:checked~#controls label:nth-last-child(2) {
+        margin: 0;
+        
+    }
+    #slides {
+        max-width: 100%;
+        margin: 0 auto;
     }
   
     .container-h2 {

@@ -8,7 +8,7 @@ function Main() {
   let dispatch = useDispatch();
 
   //Animation
-  if (window.innerWidth >= '1023') {
+  if (Number(window.innerWidth) >= '1023') {
     dispatch(animationElements());
     dispatch(animationScroolFooter());
   }
