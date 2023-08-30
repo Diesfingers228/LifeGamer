@@ -112,7 +112,6 @@
       padding-right: 5%;
       box-shadow: -1vw 1vw 1vw 1vw rgba(0, 0, 0, 0.5), 1vw 1vw 1vw 1vw rgba(0, 0, 0, 0.5);
       background-color: rgba(0, 0, 0, 0.4);
-      flex-grow: 1;
       }
   
     #frame input[type=radio] {
@@ -356,7 +355,10 @@
       display: flex;
       align-items: center;
       width: 100%;
-      height: 30vh
+      height: 25vh;
+      position: absolute;
+      top: -0 auto;
+      left: 0;
     }
   
     .footer-content {
